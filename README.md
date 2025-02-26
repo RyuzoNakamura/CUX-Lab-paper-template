@@ -35,7 +35,7 @@ git clone https://github.com/RyuzoNakamura/CUX-Lab-paper-template.git
 「ここに本文」みたいなコメントは各ファイルに書いてあるので、それを参考に書いていってください。
 
 > [!IMPORTANT]
-> コンパイルの際はレシピに必ず*latexmk(latexmkrc)*を指定するようにしてください。
+> コンパイルの際はレシピに必ず latexmk(latexmkrc) を指定するようにしてください。
 
 ## テンプレートの更新について
 
