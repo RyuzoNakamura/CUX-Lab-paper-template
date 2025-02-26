@@ -15,6 +15,14 @@
 
 notion の[CUX Wiki/技術・機材情報/ローカル PC で LaTeX 書いてみたい！](https://www.notion.so/cuxlab/PC-LaTeX-aad9c79ff043471e847d4ea93e7b4d1f?pvs=4)においてあります。
 
+## インストール
+
+論文データを入れるフォルダでターミナルを開いて
+
+```
+git clone https://github.com/RyuzoNakamura/CUX-Lab-paper-template.git
+```
+
 ## 使い方
 
 1. main.tex
@@ -25,14 +33,6 @@ notion の[CUX Wiki/技術・機材情報/ローカル PC で LaTeX 書いてみ
 ファイル名からなんとなく察しはつくと思いますが、main には本文、abstract にはアブスト、title には表紙の情報をそれぞれ記入します。
 
 「ここに本文」みたいなコメントは各ファイルに書いてあるので、それを参考に書いていってください。
-
-## インストール
-
-論文データを入れるフォルダでターミナルを開いて
-
-```
-git clone https://github.com/RyuzoNakamura/CUX-Lab-paper-template.git
-```
 
 ## テンプレートの更新について
 
