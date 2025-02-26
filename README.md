@@ -28,7 +28,7 @@ notion の[CUX Wiki/技術・機材情報/ローカル PC で LaTeX 書いてみ
 
 ## インストール
 
-論文データを入れるフォルダで
+論文データを入れるフォルダでターミナルを開いて
 
 ```
 git clone https://github.com/RyuzoNakamura/CUX-Lab-paper-template.git
