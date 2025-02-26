@@ -1,10 +1,21 @@
-# CUX Lab 学士学位論文用 latex テンプレート
+# CUX Lab 学士学位論文用 latex テンプレート <!-- omit in toc -->
 
 佐藤研究室 学士学位論文用テンプレートの非公式 latex バージョンです。
+
+## 目次 <!-- omit in toc -->
+
+- [こんな人向け](#こんな人向け)
+- [使用にあたって](#使用にあたって)
+- [インストール](#インストール)
+- [4. 必要なパッケージ](#4-必要なパッケージ)
+- [使い方](#使い方)
+- [テンプレートの更新について](#テンプレートの更新について)
+- [役に立ちそうなリンク](#役に立ちそうなリンク)
 
 ## こんな人向け
 
 - git が使える(`git init` でプロジェクトを git 管理できるとかは分かる)
+- texlive とかはもういれた！！！
 - vscode + latexworkshop で latex を書こうとしている
 
 ## 使用にあたって
@@ -23,7 +34,32 @@ notion の[CUX Wiki/技術・機材情報/ローカル PC で LaTeX 書いてみ
 git clone https://github.com/RyuzoNakamura/CUX-Lab-paper-template.git
 ```
 
+## 4. 必要なパッケージ
+
+以下のパッケージがインストールされていることを確認の上、使用してください。「こんなパッケージ無いぞ！？」ってのがあったら、多分こっちのミスなので、一旦コンパイルしてみてください。コンパイルできたらOKです。
+
+現在のパッケージインストール状況は TeX Live Manager から確認できます。
+
+```
+- amsmath
+- amsfonts
+- bm
+- graphicx
+- array
+- float
+- hyperref
+- url
+- geometry
+- jlreq
+- luatexja-fontspec
+```
+
 ## 使い方
+
+> [!WARNING]
+> 本文を書き始める前に、コピーしてすぐの状態で一旦コンパイルしてください！
+>
+> エラーが出る場合、必要なパッケージがインストールされていません。
 
 1. main.tex
 2. abstract.tex
