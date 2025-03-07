@@ -1,14 +1,29 @@
 \documentclass{cuxarticle}
 \begin{document}
+\pagestyle{empty}
 % タイトル
 \begin{titlepage}
   \include{title}
 \end{titlepage}
+
 % アブスト
 \include{abstract}
+\clearpage
+
 % 目次
 \tableofcontents
+\clearpage
 
+\pagestyle{main}
+\makeatletter
+\renewcommand{\chapter}{%
+  \if@openright\cleardoublepage\else\clearpage\fi
+  \global\@topnum\z@
+\secdef\@chapter\@schapter}
+\makeatother
+\setcounter{page}{1}
+
+% ここから本文
 \chapter{序論}
 
 \section{研究背景}
@@ -135,7 +150,25 @@
 \newpage
 \renewcommand{\refname}{\huge 参考文献}
 \bibliographystyle{junsrt}
-\bibliography{ref}
-\addcontentsline{toc}{chapter}{参考文献}
-
+\begin{thebibliography}{99}
+  \bibitem{ref1} 著者A, 著者B, ``ダミーテキスト文献名：研究の基礎と応用'', 出版社出版, 東京, 2022.
+  \bibitem{ref2} 山田太郎, 佐藤次郎, ``ダミーテキスト文献名：最新の理論と実践'', ダミー学会誌, Vol.10, No.2, pp.123-145, 2021.
+  \bibitem{ref3} 鈴木一郎, ``ダミーテキスト文献名：分析手法と考察'', ダミー出版社, 大阪, 第3版, 2020.
+  \bibitem{ref4} 高橋花子, 田中誠, ``ダミーテキスト文献名：未来への展望'', ダミー研究ジャーナル, Vol.5, pp.67-89, 2022.
+  \bibitem{ref5} 中村俊介, ``ダミーテキスト文献名：理論から実践へ'', ダミーアカデミック出版, 京都, 2019.
+  \bibitem{ref6} 小林茂, 伊藤直子, 渡辺健太, ``ダミーテキスト文献名：新しいパラダイム'', ダミー科学誌, Vol.15, No.3, pp.234-256, 2021.
+  \bibitem{ref7} 佐々木学, ``ダミーテキスト文献名：データ分析の手法と解釈'', ダミー技術書房, 名古屋, 2018.
+  \bibitem{ref8} 岡田真理, 村上健, ``ダミーテキスト文献名：実証研究の方法論'', ダミー学術出版, 福岡, 2020.
+  \bibitem{ref9} 木村正樹, ``ダミーテキスト文献名：事例から学ぶ実践知'', ダミーリサーチ社, 仙台, 第2版, 2021.
+  \bibitem{ref10} 松本和夫, 井上さやか, ``ダミーテキスト文献名：現代的アプローチ'', ダミー研究紀要, Vol.8, No.1, pp.45-67, 2019.
+  \bibitem{ref11} 野村英樹, ``ダミーテキスト文献名：批判的検討と今後の課題'', ダミープレス, 札幌, 2022.
+  \bibitem{ref12} Smith, J. and Johnson, P., ``Dummy text Document name: Theoretical Frameworks'', Dummy Academic Press, New York, 2021.
+  \bibitem{ref13} Williams, A., Brown, S., and Davis, M., ``Dummy text Document name: Empirical Research Methods'', Dummy Journal of Research, Vol.7, No.4, pp.189-210, 2020.
+  \bibitem{ref14} Anderson, R., ``Dummy text Document name: Applied Techniques and Analysis'', Dummy Publishing House, London, 3rd Edition, 2019.
+  \bibitem{ref15} Wilson, E. and Martin, L., ``Dummy text Document name: Case Studies and Applications'', Dummy Science Review, Vol.12, pp.78-99, 2022.
+  \bibitem{ref16} Thompson, K., ``Dummy text Document name: From Theory to Practice'', Dummy Academic Publishers, California, 2020.
+  \bibitem{ref17} Garcia, M., Rodriguez, P., and Kim, S., ``Dummy text Document name: New Paradigms and Approaches'', Dummy International Journal, Vol.9, No.2, pp.123-145, 2021.
+  \bibitem{ref18} Chen, H., ``Dummy text Document name: Data Analysis and Interpretation'', Dummy Technical Books, Singapore, 2018.
+  \bibitem{ref19} Miller, J. and Taylor, S., ``Dummy text Document name: Research Methodology in Practice'', Dummy Research Press, Canada, 2019.
+\end{thebibliography}
 \end{document}
