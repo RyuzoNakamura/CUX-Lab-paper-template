@@ -50,7 +50,6 @@ git clone https://github.com/RyuzoNakamura/CUX-Lab-paper-template.git
 - hyperref
 - url
 - geometry
-- jlreq
 - luatexja-fontspec
 ```
 
@@ -83,4 +82,3 @@ git clone https://github.com/RyuzoNakamura/CUX-Lab-paper-template.git
 
 - [フォントサイズを指定する](https://mathlandscape.com/latex-size/)
 - [ページ余白を設定する](https://mathlandscape.com/latex-margin/)
-- [jlreq クラスの調整](https://scrapbox.io/issac-37765679/%E2%9C%85jlreq%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%A7%E3%81%AE%E5%85%A8%E4%BD%93%E3%81%AEfontsize%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%9F%E3%81%84)
